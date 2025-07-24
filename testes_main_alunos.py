@@ -76,6 +76,9 @@ class TestObterResposta(unittest.TestCase):
         texto_aleatorio2 = "teste123" # fazer outro teste de texto aleatório
         texto_aleatorio3 = "indisposição" # fazer outro teste de texto aleatório
         texto_aleatorio4 = "sintomas de indisposição" # fazer outro teste de texto aleatório
+        self.assertEqual(obter_resposta(texto_aleatorio2), f"Desculpa, não entendi a questão! {texto_aleatorio2}")
+        self.assertEqual(obter_resposta(texto_aleatorio3), "Sintomas de indisposição podem incluir fadiga, dor de cabeça, náusea e outros sinais de que algo não está bem.")
+        self.assertEqual(obter_resposta(texto_aleatorio4), "Sintomas de indisposição podem incluir fadiga, dor de cabeça, náusea e outros sinais de que algo não está bem.")
 
 
 if __name__ == '__main__':
