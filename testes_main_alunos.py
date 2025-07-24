@@ -25,6 +25,7 @@ class TestObterResposta(unittest.TestCase):
 
     def teste_historia_portugal(self):
         """Teste de respostas sobre história de Portugal - 1 teste"""
+        self.assertEqual(obter_resposta("historia de portugal"), "Portugal tem uma rica história...")
 
     def teste_cozinhar(self):
         """Teste de respostas sobre cozinhar - 1 teste"""
